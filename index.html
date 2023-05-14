@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--WRAPPER CLASS OR CONTAINER-->
+    <div class="wrapper">
+
+        <!-- HEADER-->
+
+        <h1>Password Generator</h1>
+
+        <!-- OUTPUT DISPLAY PORTION-->
+
+        <div class="result">
+            <input readonly placeholder="PASSWORD" class="display" >
+
+            <button class="resultbutt" data-copy>
+                <span class="buttt"  data-copymsg></span>
+                <img src="./icons/icon.png" alt="copy" width="35" height="35"
+            </button>
+
+        </div>
+
+        <!-- INPUT CONTAINER-->
+
+        <div class="input-container">
+
+            <!--PASSWORD LENGTH-->
+
+            <div class="passwordlength">
+                <p>Password Length</p>
+                <p class="data" data-lengthno>0</p>
+            </div>
+
+            <!--SLIDER-->
+
+            <input class="slider" type="range" min="1" max="20"  step="1" datalength-slider>
+
+            <!--FOUR CHECKBOXES AND LABEL-->
+
+            <div class="upper">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase</label>
+            </div>
+
+            <div class="lower"> 
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase</label>
+            </div>
+
+            <div class="num">
+                <input type="checkbox" id="number">
+                <label for="number">   Includes Numbers</label>
+            </div>
+
+            <div class="sym">
+                <input type="checkbox" id="Symbols">
+                <label for="Symbols">  Includes Symbols</label>
+            </div>
+
+            <!--STRENGTH CONTAINER-->
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div class=" cir" dat-indicator></div>
+            </div>
+
+            <!-- OUTPUT GENERATING BUTTON-->
+
+            <button class="generateButton">Generate Password</button>
+
+        </div>
+
+    </div>
+
+    <!-- LINKING JAVASCRIPT FILE-->
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

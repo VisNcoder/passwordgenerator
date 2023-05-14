@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vw;
+    background-color:lightblue;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 5px solid black;
+    
+}
+
+.result{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 20px;
+    border: none;
+    position: relative;
+    height: 70px;
+  
+}
+
+
+
+.resultbutt{
+    right:  33rem;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    margin-left: 5px;
+    background:none;
+    border: none;
+    outline: none;
+    
+}
+
+.buttt{
+    position: absolute;
+    background-color: darkviolet;
+    color: yellow;
+    font-size: 1.rem;
+    top: -29px;
+    left: -25px;
+    padding: 5px 10px;
+    border-radius:1rem ;
+    opacity: 0;
+    transform:scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+}
+.active { 
+    opacity: 1;
+    transform: scale(1);
+}
+.notactive{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+button{
+    border-radius: 10px;
+    border: none;
+    margin-left: 5px;
+}
+
+
+.display{
+    padding: 9px;
+    width: 321px;
+    border-radius: 10px;
+    border-color: beige;
+    background-color:blueviolet;
+    border: none;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+
+}
+.display::placeholder{
+    color: yellow;
+    font-weight: bold;
+}
+
+
+
+.passwordlength{
+    /* font-size: 15px; */
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+.data{
+    color: yellow;
+    
+}
+
+.slider{
+    appearance: none;
+    cursor: pointer;
+    background-color: darkviolet;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    height:0.55rem;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  
+}
+
+.slider::-webkit-slider-thumb {
+    position: relative;
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: yellow ;
+    cursor: pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(255,229,61,0.50);
+    transition: all 100ms ease-in;
+}
+.slider:focus{
+    outline: 3px solid yellow;
+    
+}
+
+.slider::-webkit-slider-thumb{
+    outline: 2px solid yellow;
+    background-color: rgb(27, 3, 27);
+    box-shadow: 0px 0px 25px 5px rgba(255,229,61,0.80);
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 325px;
+    height: 325px;
+    background-color:rgb(18, 2, 34);
+    border-radius: 10px;
+    padding: 19px;   
+}
+
+.generateButton{
+    /* margin-bottom: 15 rem; */
+    padding: 5px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+
+}
+
+.generateButton:hover{
+    background-color: yellowgreen;
+}
+
+.upper{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px;
+    
+}
+
+.upper input{
+    appearance: none;
+   cursor: pointer;
+   width: 20px;
+   height: 20px;
+   border-radius: 0.35rem;
+   border: 1px solid cyan;
+   position: relative;
+}
+
+.upper input:checked{
+    background-color: cyan;
+}
+
+.upper input:checked::before{
+    content: '✓';
+    font-size: 1.05rem;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: -3.5px;
+    transform: translate(-50%) translateY(10%);
+}
+
+.upper label{
+    color: white;
+    font-size: 12px;
+    
+    
+}
+
+
+.lower{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.lower input{
+    appearance: none;
+   cursor: pointer;
+   width: 20px;
+   height: 20px;
+   border-radius: 0.35rem;
+   border: 1px solid cyan;
+   position: relative;
+}
+.lower input:checked{
+    background-color: cyan;
+}
+
+.lower  input:checked::before{
+    content: '✓';
+    font-size: 1.05rem;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: -3.5px;
+    transform: translate(-50%) translateY(10%);
+}
+
+.lower label{
+    color: white;
+    font-size: 12px;
+    
+    
+}
+
+
+
+.num{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.num  input{
+    appearance: none;
+   cursor: pointer;
+   width: 20px;
+   height: 20px;
+   border-radius: 0.35rem;
+   border: 1px solid cyan;
+   position: relative;
+}
+.num input:checked{
+    background-color: cyan;
+}
+
+.num  input:checked::before{
+    content: '✓';
+    font-size: 1.05rem;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: -3.5px;
+    transform: translate(-50%) translateY(10%);
+}
+
+.num label{
+    color: white;
+    font-size: 12px;
+    
+    
+}
+
+
+.sym{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+}
+.sym input{
+    appearance: none;
+   cursor: pointer;
+   width: 20px;
+   height: 20px;
+   border-radius: 0.35rem;
+   border: 1px solid cyan;
+   position: relative;
+
+}
+
+.sym input:checked{
+    background-color: cyan;
+}
+
+.sym  input:checked::before{
+    content: '✓';
+    font-size: 1.05rem;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: -3.5px;
+    transform: translate(-50%) translateY(10%);
+}
+
+
+.sym label{
+    color: white;
+    font-size: 12px;
+    
+    
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    
+}
+.cir{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+}
+
